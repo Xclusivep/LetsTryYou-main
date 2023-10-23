@@ -1,0 +1,279 @@
+/*Rasikhinya ampfarisaho lesley
+19001842*/
+* {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  transition: all .7s ease;
+}
+
+.container {
+  width: 100%;
+  background-color: #fff;/*
+  padding: 35px;*/
+  margin: 0;
+  height: 550px;
+}
+
+.container > .page1 {
+  height: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  position: relative;
+  transition: .7s ease;
+}
+
+.container > .page1 > .left-container {
+  height: 550px;
+  width: 55%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFF;
+  position: relative;
+}
+
+.container > .page1 > .left-container > .theimg {
+  height: 180px;
+  width: 550px;
+  position: relative;
+}
+
+.container > .page1 > .left-container > .theimg > .imgblock {
+  height: 100px;
+  width: 80%;
+  position: relative;
+  background-size: cover;
+  border: 1;
+  border-right: 2px solid #000011;
+  background-repeat: no-repeat;
+  background-image: url(../IMAGES/flyerdesign_07122021_222205.png);
+}
+
+.container > .page1 > .right-container {
+  height: 550px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000;
+}
+
+.container > .page1 > .right-container > .inner-con {
+  height: 450px;
+  width: 80%;
+  position: relative;/*
+  background-color: #ACACAC;*/
+}
+
+.container > .page1 > .right-container > .inner-con > nav {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;/*
+  background-color: pink;*/
+}
+
+.container > .page1 > .right-container > .inner-con > nav > div {
+  height: 50px;
+  text-align: center;/*
+  background-color: brown;*/
+}
+
+.container > .page1 > .right-container > .inner-con > nav > div > span {
+  text-decoration: none;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.container > .page1 > .right-container > .inner-con > nav > div > span:hover {
+  color: #ACACAC;
+  border-bottom: 2px solid #ACACAC;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+footer > p {
+  height: fit-content;
+  color: #fff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+  .container {
+    height: 110px;
+  }
+  .container > .page1 {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container > .page1 > .left-container {
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .container > .page1 > .left-container > .theimg {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  .container > .page1 > .left-container > .theimg > .imgblock {
+    height: 70px;
+    border-right: none;
+  }
+  .container > .page1 > .right-container {
+    height: 40px;
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+  }
+  .container > .page1 > .right-container > .inner-con {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: none;
+  }
+  .container > .page1 > .right-container > .inner-con > nav {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+  }
+  .container > .page1 > .right-container > .inner-con > nav > div {
+    margin-right: 10px;
+    margin-top: 9px;
+  }
+  .fixbar {
+    top: 0;
+    transition: .7s ease;
+    z-index: 3;
+    position: fixed;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .active {
+    color: #ACACAC;
+    border-bottom: 2px solid #ACACAC;
+  }
+  .container {
+    height: 110px;
+  }
+  .container > .page1 {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container > .page1 > .left-container {
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .container > .page1 > .left-container > .theimg {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  .container > .page1 > .left-container > .theimg > .imgblock {
+    height: 70px;
+    border-right: none;
+  }
+  .container > .page1 > .right-container {
+    height: 40px;
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+  }
+  .container > .page1 > .right-container > .inner-con {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: none;
+  }
+  .container > .page1 > .right-container > .inner-con > nav {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+  }
+  .container > .page1 > .right-container > .inner-con > nav > div {
+    margin-right: 10px;
+    margin-top: 9px;
+  }
+  .fixbar {
+    top: 0;
+    transition: .7s ease;
+    z-index: 3;
+    position: fixed;
+  }
+}
+
+@media only screen and (max-width: 733px) {
+  .container > .page1 > .right-container > .inner-con > nav {
+    width: 100%;
+  }
+  .container > .page1 > .right-container > .inner-con > nav > div > span {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .container > .page1 > .left-container,
+  .container > .page1 > .left-container > .theimg > .imgblock {
+    height: 60px;
+  }
+  .container > .page1 > .left-container > .theimg {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+  .container > .page1 > .right-container > .inner-con > nav {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .container > .page1 > .right-container > .inner-con > nav > div > span {
+    font-size: 11px;
+  }
+  footer {
+    height: 50px;
+    width: 100%;
+  }
+  footer > p {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,124 @@
+.ab-con {
+  height: 320px;
+  width: 100%;
+  padding: 30px 35px;
+  position: relative;
+  background-color: #CACACA;
+}
+
+.ab-con > .on-padd-con {
+  height: 265px;
+  width: 80%;
+  margin: 0 auto 0 auto;
+  background-color: #eefbed;
+}
+
+.ab-con > .on-padd-con > .ab-tit-con {
+  height: 70px;
+  margin: 0 auto 0 auto;
+  width: 30%;
+  text-align: center;
+}
+
+.ab-con > .on-padd-con > .ab-tit-con > span {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-family: serif;
+  border-bottom: 2px solid #000;
+}
+
+.ab-con > .on-padd-con > .ab-info-con {
+  height: 180px;
+  margin: 0 auto 0 auto;
+  width: 72%;
+  text-align: center;/*
+  background-color: red;*/
+}
+
+.ab-con > .on-padd-con > .ab-info-con > span {
+  color: #000;
+  text-align: center;
+  font-family: serif;
+}
+@media only screen (max-width: 1024px) {
+  .ab-con > .on-padd-con > .ab-info-con > span {/*
+    font-size: 17px;*/
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .ab-con {
+     height: 250px;
+     padding: 25px 0;
+   }
+   .ab-con > .on-padd-con {
+     height: 200px;
+     width: 95%;
+   }
+   .ab-con > .on-padd-con > .ab-tit-con {
+     height: 35px;
+   }
+   .ab-con > .on-padd-con > .ab-tit-con > span {
+     font-size: 25px;
+   }
+   .ab-con > .on-padd-con > .ab-info-con {
+     height: 200px;/*
+     width: 85%;*/
+   }
+   .ab-con > .on-padd-con > .ab-info-con > span {
+     font-size: 12px;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+ .ab-con {
+    height: 300px;
+    padding: 25px 0;
+  }
+  .ab-con > .on-padd-con {
+    height: 250px;
+    width: 95%;
+  }
+  .ab-con > .on-padd-con > .ab-tit-con {
+    height: 35px;
+  }
+  .ab-con > .on-padd-con > .ab-tit-con > span {
+    font-size: 25px;
+  }
+  .ab-con > .on-padd-con > .ab-info-con {
+    height: 200px;
+    width: 85%;
+  }
+  .ab-con > .on-padd-con > .ab-info-con > span {/*
+    font-size: 17px;*/
+  }
+}
+@media only screen and (max-width: 600px) {
+  .ab-con > .on-padd-con > .ab-info-con > span {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .ab-con {
+     padding: 15px 0;
+   }
+   .ab-con > .on-padd-con {
+     height: 270px;
+     width: 95%;
+   }
+   .ab-con > .on-padd-con > .ab-tit-con {
+     height: 30px;
+     width: 100%;
+   }
+   .ab-con > .on-padd-con > .ab-tit-con > span {
+     font-size: 20px;
+   }
+   .ab-con > .on-padd-con > .ab-info-con {
+     height: 240px;
+     width: 92%;
+   }
+   .ab-con > .on-padd-con > .ab-info-con > span {
+     font-size: 11px;
+   }
+}

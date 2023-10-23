@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RASIKHINYA AL | Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="CSS/body.css" type="text/css"/>
+    <link rel="stylesheet" href="CSS/abstyle.css" type="text/css"/>
+    <link rel="stylesheet" href="CSS/skills.css" type="text/css"/>
+    <link rel="stylesheet" href="CSS/service.css" type="text/css"/>
+    <link rel="stylesheet" href="CSS/contact.css" type="text/css"/>
+  </head>
+
+  <body>
+    <section id="home" class="container">
+      <div class="page1">
+        <div class="left-container">
+          <div class="theimg">
+            <div class="imgblock">
+              <!--<img src="IMAGES/flyerdesign_07122021_212553.png" height="50px" width="310px"/>
+            --></div>
+          </div>
+        </div>
+        <div class="right-container" id="fixedbar">
+          <div class="inner-con">
+            <nav>
+              <div><span id="hm">HOME</span></div>
+              <div><span id="abt">ABOUT ME</span></div>
+              <div><span id="skls">MY SKILLS</span></div>
+              <div><span id="srvc">SERVICE</span></div>
+              <div><span id="hr">HIRE ME</span></div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="ab-con">
+      <div class="on-padd-con">
+        <div class="ab-tit-con">
+          <span>ABOUT ME</span>
+        </div>
+        <div class="ab-info-con">
+          <span>Hi, Welcome to my Site. I'm <i>(Your name)</i>, Student number <i>1900****</i>, I am a student at the University OF Venda, currently doing 'Art & Design'. I began my drawings back when I was until I realise that the talent is growing and I should take it out to the world. For almost twenty years, I’ve been helping clients of all shapes and sizes create beautiful and usable things. Having started my career in print design, I learned how to draw and design early on through professional experience and freelance work. Working for myself (and omitting a commute) also allows me the opportunity to dedicate more of my free time to wildlife rescue and rehabilitiation, my second passion.</span>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills-con">
+      <div class="skills-tit">
+         <span>MY SKILLS</span>
+      </div>
+      <div class="grds">
+        <div class="grid-container1">
+          <div class="img1"></div>
+          <div class="img2"></div>
+        </div>
+        <div class="grid-container2">
+          <div class="img3"></div>
+          <div class="img4"></div>
+        </div>
+        <div class="grid-container3">
+          <div class="img5"></div>
+          <div class="img6"></div>
+        </div>
+      </div>
+    </section>
+    <section id="service" class="service">
+      <div class="serv-con">
+        <div class="serv-tut">
+          <span class="head">ART TUTORIALS
+          <br><br>
+          <span class="p">Drawing w/ Photoshop<br>
+            Drawing w/ Pen & Paper<br>
+            Drawing w/ Pencil & Paper<br>
+            Tatoo Art</br>
+            Animal & Human Drawing<br>
+            LOGO Making</span>
+          </span>
+        </div>
+        <div class="serv-prices">
+          <span class="head">DRAWING PRICES
+          <br><br>
+          <span class="p">Full Human Picture : R200 <br>
+            Only HumanFace Picture : R100 <br>
+            Tatoo : R600 <br>
+            LOGO : R200 <br>
+            House Planning : R300</span>
+          </span>
+        </div>
+      </div>
+    </section>
+    <section id="hire" class="hireme">
+      <div class="cont">
+        <div class="logo-links">
+          <div class="bor email">
+          	<a href ="m">
+          		<img src="IMAGES/email.png">
+          	</a>
+          </div>
+          <div class="bor ig">
+          	<a href ="m">
+          		<img src="IMAGES/igh.png">
+          	</a>
+          </div>
+          <div class="bor whatsapp">
+          	<a href ="https://wa.me/+2772360524" target="_blank">
+          		<img src="IMAGES/apph.png">
+          	</a>
+          </div>
+          <div class="bor email">
+          	<a href ="#" target="_blank">
+          		<img src="IMAGES/fbh.png">
+          	</a>
+          </div>
+          <div class="bor email">
+          	<a href ="#" target="_blank">
+          		<img src="IMAGES/youtube-logotype.png">
+          	</a>
+          </div>
+        </div>
+        <div class="sub-con">
+          <form>
+            <input type="text" name="text" placeholder=" Email" required=""/>
+            <input type="submit" value="Subscribe"/>
+          </form>
+        </div>
+        <div class="img">
+          <div></div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Arrithnius Presents: LetsTryYou 2021 | &copy All Copyrights Reserved | Designed by Ravhuravhu AJ.</p>
+    </footer>
+    <script type="text/javascript">
+      $(function() {
+        $(window).scroll(function() {
+          if($(this).scrollTop() > 70) {
+            $("#fixedbar").addClass("fixbar");
+          }
+          else {
+            $("#fixedbar").removeClass("fixbar");
+          }
+        });
+        //sliding the divs and adding an active class.
+        if($("#hm, #abt, #skls, #srvc, #hr").data('clicked', true)) {
+          $("#hm").on("click",function() {
+            window.scrollTo(0, 0);
+            $("#hm").addClass("active");
+            $("#abt, #skls, #srvc, #hr").removeClass("active");
+          });
+          $("#abt").on("click",function() {
+            window.scrollTo(0, 70);
+            $("#abt").addClass("active");
+            $("#hm, #skls, #srvc, #hr").removeClass("active");
+          });
+          $("#skls").on("click",function() {
+            window.scrollTo(0, 350);
+            $("#skls").addClass("active");
+            $("#hm, #abt, #srvc, #hr").removeClass("active");
+          });
+          $("#srvc").on("click",function() {
+            window.scrollTo(0, 1100);
+            $("#srvc").addClass("active");
+            $("#hm, #abt, #skls, #hr").removeClass("active");
+          });
+          $("#hr").on("click",function() {
+            window.scrollTo(0, 1100);
+            $("#hr").addClass("active");
+            $("#hm, #abt, #skls, #srvc").removeClass("active");
+          });
+        } else {
+          $("#hm, #abt, #skls, #srvc, #hr").removeClass("active"); //not working
+        }
+      });
+    </script>
+  </body>
+</html>
